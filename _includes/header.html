@@ -1,0 +1,9 @@
+<!--[if lt IE 3]> start of _includes/header.html <![endif]-->
+{% capture pagelang %}{{ page.lang | default: "en"}}{% endcapture -%}
+{% assign hrdt = site.data.html.header[pagelang] -%}
+<header class="page-header">
+    <img id="toplogo" src="https://img.mnh48.moe/mnh48/mnh48-nobg-250.png" alt="MNH48" class="webmainicon"/>
+    <h1 class="websitetitle" lang="{{ pagelang }}">{{ hrdt.webtitle }}</h1>
+    <h2 class="webpagetitle" lang="{{ pagelang }}">{% if page.title %}{% if page.title == hrdt.webtitle %}{{ hrdt.pagetitle }}{% else %}{{ page.title }}{% endif %}{% else %}{{ hrdt.pagetitle }}{% endif %}</h2>
+</header>
+<!--[if lt IE 3]> end of _includes/header.html <![endif]-->

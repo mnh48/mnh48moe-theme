@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: "mul" }}"{% if page.lang == "ms-Arab" or page.lang == "ms-Brgn" %} dir="rtl"{% endif %}>
+{% include head.html %}
+<body itemscope itemtype="https://schema.org/WebPage">
+<div id="loadingscn"></div>
+{% include header.html %}
+<main lang="{{ page.lang | default: "mul" }}">
+<!--[if lt IE 3]> start of page content <![endif]-->
+{{ content }}
+<!--[if lt IE 3]> end of page content <![endif]-->
+</main>
+{% include footer.html %}
+</body>
+<!--[if lt IE 3]>
+  This Jekyll template was first written manually by Yaya MNH48 using
+  Notepadqq v1.4.8 on 32-bit device running Ubuntu 18.04.5 LTS i686 on
+  15 September 2020 Malaysian time.
+   __  __                            __  ___  _   __  __  __  __ __    ____ 
+   \ \/ / ____ _  __  __  ____ _    /  |/  / / | / / / / / / / // /   ( __ )
+    \  / / __ `/ / / / / / __ `/   / /|_/ / /  |/ / / /_/ / / // /_  / __  |
+    / / / /_/ / / /_/ / / /_/ /   / /  / / / /|  / / __  / /__  __/ / /_/ / 
+   /_/  \__,_/  \__, /  \__,_/   /_/  /_/ /_/ |_/ /_/ /_/    /_/    \____/  
+               /____/                                                       
+<![endif]-->
+</html>

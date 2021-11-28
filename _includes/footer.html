@@ -1,0 +1,33 @@
+<!--[if lt IE 3]> start of _includes/footer.html <![endif]-->
+{% capture pagelang %}{{ page.lang | default: "en"}}{% endcapture -%}
+{% assign ftdt = site.data.html.footer[pagelang] -%}
+<footer lang="{{ pagelang }}">
+{%- if page.lang == "mul" %}
+    <ul>
+        <li id="footer-copyright" class="footlist">&copy; MNH48 2012 - {{ "now" | date: "%Y" }}</li>
+        <li id="footer-homepage" class="footlist"><a href="https://www.mnh48.moe/">MNH48.moe</a></li>
+        <li id="footer-blog" class="footlist"><a href="https://www.mnh48.com">MNH48.com</a></li>
+        <li id="footer-github" class="footlist"><a href="https://github.com/mnh48/">GitHub</a></li>
+        <li id="footer-twitter" class="footlist"><a href="https://twitter.com/yayamnh48/">Twitter</a></li>
+        <li id="footer-youtube" class="footlist"><a href="https://www.youtube.com/channel/UCnbL8SM08ViV43pZP5UuEhw/">YouTube</a></li>
+    </ul>
+{%- else %}
+    <ul>
+        <li id="footer-copyright" class="footlist">&copy; MNH48 2012 - {{ "now" | date: "%Y" }}</li>
+        <li id="footer-homepage" class="footlist" lang="{{ pagelang }}"><a href="https://www.mnh48.moe/{{ pagelang }}/">{{ ftdt.homepage }}</a></li>
+        <li id="footer-blog" class="footlist" lang="{{ pagelang }}"><a href="https://{{ ftdt.domain }}.mnh48.com">{{ ftdt.blog }}</a></li>
+        <li id="footer-github" class="footlist"><a href="https://github.com/mnh48/">GitHub</a></li>
+        <li id="footer-twitter" class="footlist"><a href="https://twitter.com/yayamnh48/">Twitter</a></li>
+        <li id="footer-youtube" class="footlist"><a href="https://www.youtube.com/channel/UCnbL8SM08ViV43pZP5UuEhw/">YouTube</a></li>
+    </ul>
+    <ul>
+        <li id="footer-support" class="footlist" lang="{{ pagelang }}"><a href="https://meta.mnh48.moe/{{ pagelang }}/support">{{ ftdt.support }}</a></li>
+        <li id="footer-contact" class="footlist" lang="{{ pagelang }}"><a href="https://meta.mnh48.moe/{{ pagelang }}/contact">{{ ftdt.contact }}</a></li>
+        <li id="footer-sttaus" class="footlist" lang="{{ pagelang }}"><a href="https://status.mnh48.com/">{{ ftdt.status }}</a></li>
+    </ul>
+    <p id="footer-disclaim" class="footer" lang="{{ pagelang }}">{{ ftdt.disclaim }}</p>
+    <p id="footer-generate" class="footer" lang="{{ pagelang }}">{{ ftdt.generate }} <a href="https://github.com/mnh48/tl.mnh48.moe/tree/master{{ page.url | replace: ".html", ".md" }}">{{ ftdt.gitrepo }}</a> {{ ftdt.wordon }} {{ "now" | date: "%Y-%m-%d %H:%M" }} (UTC+08)</p>
+{% endif -%}
+{% if page.needbtt %}<a href="#toplogo" class="backtotop">↑</a>{% endif -%}
+</footer>
+<!--[if lt IE 3]> end of _includes/footer.html <![endif]-->

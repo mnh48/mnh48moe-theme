@@ -1,0 +1,94 @@
+<!--[if lt IE 3]> start of _includes/head.html  <![endif]-->
+{% capture pagelang %}{{ page.lang | default: "en"}}{% endcapture -%}
+{% assign hddt = site.data.html.header[pagelang] -%}
+{% if page.title -%}
+    {% if page.title == hddt.webtitle -%}
+        {%- assign headtitle = page.title -%}
+    {% else -%}
+        {% capture headtitle -%}
+        {{ page.title }} - {{ hddt.webtitle | default: "MNH48 Translations" -}}
+        {% endcapture -%}
+    {% endif -%}
+{% else -%}
+    {% capture headtitle -%}
+    {{ hddt.webtitle | default: "MNH48 Translations" }}
+    {% endcapture -%}
+{% endif -%}
+{% if page.description -%}
+    {% assign headdesc = page.description -%}
+{% else -%}
+    {% assign headdesc = hddt.pagetitle -%}
+{% endif -%}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#660055">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#660055">
+    <meta name="msapplication-navbutton-color" content="#660055">
+    <meta name="title" content="{{ headtitle | escape }}">
+    <meta name="description" content="{{ headdesc | escape }}">
+    {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif -%}
+    {% if page.date %}<meta name="dcterms.created" content="{{ page.date }}">{% endif -%}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@yayamnh48">
+    <meta name="twitter:url" content="https://tl.mnh48.moe{{ page.url }}">
+    <meta name="twitter:title" content="{{ headtitle | escape }}">
+    <meta name="twitter:description" content="{{ headdesc | escape }}">
+    <meta name="twitter:image" content="{{ page.thumbnail | default: "https://img.mnh48.moe/mnh48/mnh48-164.png" }}">
+    <meta property="og:locale" content="{{ pagelang }}">
+    <meta property="og:title" content="{{ headtitle | escape }}">
+    <meta property="og:description" content="{{ headdesc | escape }}">
+    <meta property="og:site_name" content="{{ hddt.webtitle | escape }}">
+    <meta property="og:image" content="https://img.mnh48.moe/mnh48/mnh48-500.png" />
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://img.mnh48.moe/mnh48/mnh48-180.png">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://img.mnh48.moe/mnh48/mnh48-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://img.mnh48.moe/mnh48/mnh48-16.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="https://img.mnh48.moe/mnh48/mnh48-128.png">
+    <link rel="icon" type="image/png" sizes="164x164" href="https://img.mnh48.moe/mnh48/mnh48-164.png">
+    <link rel="manifest" href="https://img.mnh48.moe/site.webmanifest">
+    <!--[if lt IE 9]> <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> <![endif]-->
+    <!--[if lt IE 9]> <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script> <![endif]-->
+    <link rel="stylesheet" href="https://cdn.mnh48.moe/css/font-latn.css">
+    <link rel="stylesheet" href="https://cdn.mnh48.moe/css/font-arab.css">
+    <link rel="stylesheet" href="https://cdn.mnh48.moe/css/font-rjng.css">
+    <link rel="stylesheet" href="https://cdn.mnh48.moe/css/font-brgn.css">
+    <link rel="stylesheet" href="https://cdn.mnh48.moe/css/font-jpns.css">
+    <link rel="stylesheet" href="https://cdn.mnh48.moe/css/font-hans.css">
+    <link rel="stylesheet" href="https://cdn.mnh48.moe/css/font-hant.css">
+    <link rel="stylesheet" href="https://cdn.mnh48.moe/css/font-emoji.css">
+    <link rel="stylesheet" href="https://cdn.mnh48.moe/css/main.css">
+    <!--link rel="stylesheet" href="https://cdn.mnh48.moe/css/invert.css" note="uncomment when invert style is completed"-->
+    {% if pagelang == "ms-Brgn" %}<link rel="stylesheet" href="https://cdn.mnh48.moe/css/brgn.css">{% endif -%}
+    <!--link rel="stylesheet" href="https://cdn.mnh48.moe/css/brgninvert.css" note="uncomment when invert style for ms-Brgn is completed"-->
+    {% if page.url == "/" %}<link rel="stylesheet" href="https://cdn.mnh48.moe/css/homepage.css">{% endif -%}
+    <script type="application/ld+json">
+    {
+        "@type":"WebSite",
+        "url":"https://tl.mnh48.moe{{ page.url }}",
+        "headline":"{{ headtitle | escape }}",
+        "name":"{{ hddt.webtitle | escape }}",
+        "description":"{{ headdesc | escape }}",
+        "@context":"https://schema.org"
+    }
+    </script>
+    <script src="https://cdn.mnh48.moe/js/common/sorttable.js"></script>
+    <script> 
+    document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector("body").style.visibility = "hidden";
+            document.querySelector("#loadingscn").style.visibility = "visible";
+        } else {
+            document.querySelector("#loadingscn").style.display = "none";
+            document.querySelector("body").style.visibility = "visible";
+        }
+    };
+    </script>
+    <title>{{ headtitle }}</title>
+</head>
+<!--[if lt IE 3]> end of _includes/head.html  <![endif]-->
