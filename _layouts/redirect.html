@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+{% capture pagelang %}{{ page.lang | default: "en"}}{% endcapture -%}
+{% assign ardr = site.data.html.redirect[pagelang] -%}
+<html lang="{{ pagelang }}">
+<head>
+  <link rel="canonical" href="{{ page.redirecturl }}" />
+  <meta http-equiv="refresh" content="0;URL={{ page.redirecturl }}">
+  <title>{{ page.title }}</title>
+</head>
+
+<body>
+  {{ ardr.redirectto }} {{ page.redirectname }}{{ ardr.period }} {{ ardr.manually }} <a href="{{ page.redirecturl }}">{{ page.redirecturl }}</a>{{ ardr.period }}
+</body>
+</html>
