@@ -26,7 +26,7 @@
         <li id="footer-sttaus" class="footlist" lang="{{ pagelang }}"><a href="https://status.mnh48.com/">{{ ftdt.status }}</a></li>
     </ul>
     <p id="footer-disclaim" class="footer" lang="{{ pagelang }}">{{ ftdt.disclaim }}</p>
-    <p id="footer-generate" class="footer" lang="{{ pagelang }}">{{ ftdt.generate }} <a href="https://github.com/{{ site.repository }}/tree/master{{ page.url | replace: ".html", ".md" }}">{{ ftdt.gitrepo }}</a> {{ ftdt.wordon }} {{ "now" | date: "%Y-%m-%d %H:%M" }} (UTC+08)</p>
+    <p id="footer-generate" class="footer" lang="{{ pagelang }}">{{ ftdt.generate }} <a href="https://github.com/{{ site.repository }}/tree/{{site.branch | default: "main"}}{{ page.url | replace: ".html", ".md" }}">{{ ftdt.gitrepo }}</a> {{ ftdt.wordon }} {{ "now" | date: "%Y-%m-%d %H:%M" }} (UTC+08)</p>
 {% endif -%}
 {% if page.needbtt %}<a href="#toplogo" class="backtotop">↑</a>{% endif -%}
 </footer>
