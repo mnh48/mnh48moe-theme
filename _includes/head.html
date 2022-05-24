@@ -6,12 +6,12 @@
         {%- assign headtitle = page.title -%}
     {% else -%}
         {% capture headtitle -%}
-        {{ page.title }} - {{ hddt.webtitle | default: "MNH48 Translations" -}}
+        {{ page.title }} - {{ hddt.webtitle | default: "MNH48" -}}
         {% endcapture -%}
     {% endif -%}
 {% else -%}
     {% capture headtitle -%}
-    {{ hddt.webtitle | default: "MNH48 Translations" }}
+    {{ hddt.webtitle | default: "MNH48" }}
     {% endcapture -%}
 {% endif -%}
 {% if page.description -%}
@@ -32,7 +32,7 @@
     {% if page.date %}<meta name="dcterms.created" content="{{ page.date }}">{% endif -%}
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@yayamnh48">
-    <meta name="twitter:url" content="https://tl.mnh48.moe{{ page.url }}">
+    <meta name="twitter:url" content="https://{{ site.site_domain }}{{ page.url }}">
     <meta name="twitter:title" content="{{ headtitle | escape }}">
     <meta name="twitter:description" content="{{ headdesc | escape }}">
     <meta name="twitter:image" content="{{ page.thumbnail | default: "https://img.mnh48.moe/mnh48/mnh48-164.png" }}">
@@ -70,7 +70,7 @@
     <script type="application/ld+json">
     {
         "@type":"WebSite",
-        "url":"https://tl.mnh48.moe{{ page.url }}",
+        "url":"https://{{ site.site_domain }}{{ page.url }}",
         "headline":"{{ headtitle | escape }}",
         "name":"{{ hddt.webtitle | escape }}",
         "description":"{{ headdesc | escape }}",
@@ -89,6 +89,16 @@
         }
     };
     </script>
+    <noscript>
+      <style>
+        #loadingscn {
+          display: none;
+        }
+        body {
+          visibility: visible;
+        }
+      </style>
+    </noscript>
     <title>{{ headtitle }}</title>
 </head>
 <!--[if lt IE 3]> end of _includes/head.html  <![endif]-->

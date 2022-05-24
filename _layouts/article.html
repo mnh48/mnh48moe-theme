@@ -5,11 +5,9 @@ layout: default
 {% capture pagelang %}{{ page.lang | default: "en"}}{% endcapture -%}
 {% assign ardt = site.data.html.header[pagelang] -%}
 <article lang="{{ pagelang }}" class="page">
-{% comment -%}
-    {% if page.url != '/' -%}
-        <a href=".." class="backtext">{{ ardt.backtext }}</a>
-    {% endif -%}
-{% endcomment %}<!--[if lt IE 3]> Jekyll comment as not using it on this particular website <![endif]-->
+  {% if page.needbacktext -%}
+      <a href=".." class="backtext">{{ ardt.backtext }}</a>
+  {% endif -%}
 <!--[if lt IE 3]> start of article content <![endif]-->
 {{ content -}}
 <!--[if lt IE 3]> end of article content <![endif]-->
