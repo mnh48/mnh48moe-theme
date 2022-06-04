@@ -1,0 +1,36 @@
+en:
+  redirectto: Redirecting to
+  manually: If your browser is not redirecting you, please manually go to
+  period: "."
+ms:
+  redirectto: Melencongkan ke
+  manually: Jika pelayar anda tidak melencongkan anda, sila pergi sendiri ke
+  period: "."
+ms-Arab:
+  redirectto: ملينچوڠکن ک
+  manually: جک ڤلاير اندا تيدق ملينچوڠکن اندا⹁ سيلا ڤرݢي سنديري ک
+  period: "."
+ms-Rjng:
+  redirectto: ꤸꥍꤾꥉꥐꤹꥋꥏꤰꥐ ꤰꥍ
+  manually: ꤺꥇꤰ ꤶꥍꤾꤿꥑ ꥆꥐꤴ ꤳꥇꤴꤰ꥓ ꤸꥍꤾꥉꥐꤹꥋꥏꤰꥐ ꥆꥐꤴ, ꤼꥇꤾ ꤶꥍꥑꤱꥇ ꤼꥍꥐꤴꥇꤽꥇ ꤰꥍ
+  period: "."
+ms-Brgn:
+  redirectto:  
+  manually:          
+  period: "."
+ja:
+  redirectto: リダイレクトします。
+  manually: ブラウザがリダイレクトしない場合は、直接アクセスしてください。リンクは
+  period: "。"
+zh-Hans:
+  redirectto: 正在重新导向
+  manually: 如果您的浏览器没重新导向的话，请自己按这连接：
+  period: "。"
+zh-Hant:
+  redirectto: 正在重新導向
+  manually: 如果您的瀏覽器沒重新導向的話，請自己按這連接：
+  period: "。"
+mul:
+  redirectto: →
+  manually: 👉🏻
+  period: "."

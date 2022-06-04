@@ -1,0 +1,45 @@
+en:
+  domain: en
+  webtitle: MNH48 Theme
+  pagetitle: The theme used across MNH48 websites
+  backtext: ← Back
+ms:
+  domain: ms
+  webtitle: Tema MNH48
+  pagetitle: Tema yang digunakan merentasi laman-laman sesawang MNH48
+  backtext: ← Kembali
+ms-Arab:
+  domain: jawi
+  webtitle: تيما MNH48
+  pagetitle: تيما يڠ دݢوناکن مرنتسي لامن٢ سساوڠ MNH48
+  backtext: → کمبالي
+ms-Rjng:
+  domain: rjng
+  webtitle: ꤳꥉꤸ MNH48
+  pagetitle: ꤳꥉꤸ ꤿꥏ ꤴꥇꤱꥈꤵꤰꥐ ꤸꥍꤽꥍꥐꤳꤼꥇ ꤾꤸꥐ-ꤾꤸꥐ ꤼꥍꤼꥀꥏ MNH48
+  backtext: ← ꤰꥍꤸ꥓ꤷꤾꥇ
+ms-Brgn:
+  domain: brgn
+  webtitle:  
+  pagetitle:       
+  backtext: ↑ 
+ja:
+  domain: jpn
+  webtitle: MNH48のテーマ
+  pagetitle: MNH48のウェブサイトで使うテーマ
+  backtext: ←　返る
+zh-Hans:
+  domain: chn
+  webtitle: MNH48网站主题包
+  pagetitle: 在MNH48的所有网站上使用的主题包
+  backtext: ← 返回
+zh-Hant:
+  domain: twn
+  webtitle: MNH48網站主題包
+  pagetitle: 在MNH48的所有網站上使用的主題包
+  backtext: ← 返回
+mul:
+  domain: www
+  webtitle: MNH48 Theme - Tema MNH48 - <span dir="rtl" lang="ms-Arab">تيما MNH48</span> - <span lang="ms-Rjng">ꤳꥉꤸ MNH48</span>
+  pagetitle: <span style="writing-mode:unset; display:inline-block; margin-left:0em; direction:rtl; -moz-transform:scale(-1, -1); -webkit-transform:scale(-1, -1); -o-transform:scale(-1, -1); -ms-transform:scale(-1, -1); transform:scale(-1, -1); height:1.5em;" lang="ms-Brgn"> </span> - <span lang="zh-Hans">MNH48网站主题包</span> - <span lang="zh-Hant">MNH48網站主題包</span> - <span lang="ja">MNH48のテーマ</span>
+  backtext: ←

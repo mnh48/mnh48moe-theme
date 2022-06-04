@@ -1,0 +1,41 @@
+title: MNH48 Theme #title of your website
+description: The theme used across MNH48 websites #description of your website
+owner_name: MNH48 #your name
+twitter_username: yayamnh48 #your twitter username
+github_username: mnh48 #your github username
+youtube_link: https://www.youtube.com/channel/UCnbL8SM08ViV43pZP5UuEhw/ #your youtube channel link
+timezone: Asia/Kuala_Lumpur #the website's timezone
+branch: main #change this to the branch of your website repository where the website is generated from
+repository: mnh48/mnh48moe-theme #change this to the repository of your website, or comment out if not using GitHub Page
+#remote_theme: mnh48/mnh48moe-theme #uncomment this if you use this file as base for your config
+
+homepage:
+  name: MNH48.moe
+  wwwurl: www.mnh48.moe
+  url: mnh48.moe
+
+blog:
+  name: MNH48.com
+  wwwurl: www.mnh48.com
+  url: mnh48.com
+
+mnh48:
+    picture: https://img.mnh48.moe/mnh48/mnh48-200.png
+    twitter: yayamnh48
+
+plugins:
+  - jekyll-redirect-from
+  - jemoji
+  - jekyll-mentions
+  - jekyll-remote-theme
+
+markdown: kramdown
+kramdown:
+  extensions:
+    - no_intra_emphasis
+    - fenced_code_blocks
+    - autolink
+    - tables
+    - strikethrough
+    - superscript
+    - with_to_data
