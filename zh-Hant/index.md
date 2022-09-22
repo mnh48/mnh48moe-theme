@@ -2,6 +2,14 @@
 title: 試一試MNH48網站的主題包
 description: 這是來試試主題包在華文版本中如何表現
 lang: zh-Hant
+hasENG: true
+hasRMI: true
+hasJWI: true
+hasRJG: true
+hasBRG: true
+hasSCH: true
+hasTCH: true
+hasJPN: true
 layout: article
 needbtt: true
 ---

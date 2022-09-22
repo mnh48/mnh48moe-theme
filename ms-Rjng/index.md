@@ -2,6 +2,14 @@
 title: ꤹꥈꤷ ꤳꥉꤸ MNH48
 description: ꥆꥇꤵꥇ ꤶꥍꥑꤹꥈꤷꥆꥐ ꥆꥈꥐꤳꥈꤰ꥓ ꤳꥉꤲꥋꤰ꥓ ꤳꥉꤸ ꤴꥇꤱꥈꤵꤰꥐ ꤴꤾꤸ꥓ ꤷꥁꤼ ꤸꥍꤾꤿꥈ
 lang: ms-Rjng
+hasENG: true
+hasRMI: true
+hasJWI: true
+hasRJG: true
+hasBRG: true
+hasSCH: true
+hasTCH: true
+hasJPN: true
 layout: article
 needbtt: true
 ---

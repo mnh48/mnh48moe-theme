@@ -2,6 +2,14 @@
 title: Cuba Tema MNH48
 description: Ini percubaan untuk tengok tema digunakan dalam bahasa Melayu
 lang: ms
+hasENG: true
+hasRMI: true
+hasJWI: true
+hasRJG: true
+hasBRG: true
+hasSCH: true
+hasTCH: true
+hasJPN: true
 layout: article
 needbtt: true
 ---

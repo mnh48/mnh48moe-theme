@@ -2,6 +2,14 @@
 title: 试一试MNH48网站的主题包
 description: 这是来试试主题包在华文版本中如何表现
 lang: zh-Hans
+hasENG: true
+hasRMI: true
+hasJWI: true
+hasRJG: true
+hasBRG: true
+hasSCH: true
+hasTCH: true
+hasJPN: true
 layout: article
 needbtt: true
 ---

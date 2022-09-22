@@ -2,6 +2,14 @@
 title: چوبا تيما MNH48
 description: اين ڤرچوباٴن اونتوق تيڠوق تيما دݢوناکن دالم بهاس ملايو
 lang: ms-Arab
+hasENG: true
+hasRMI: true
+hasJWI: true
+hasRJG: true
+hasBRG: true
+hasSCH: true
+hasTCH: true
+hasJPN: true
 layout: article
 needbtt: true
 ---

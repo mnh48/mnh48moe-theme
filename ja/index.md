@@ -2,6 +2,14 @@
 title: MNH48サイトテーマ試用
 description: ウェブサイトテーマが日本語でどのように見えるかのテストです。
 lang: ja
+hasENG: true
+hasRMI: true
+hasJWI: true
+hasRJG: true
+hasBRG: true
+hasSCH: true
+hasTCH: true
+hasJPN: true
 layout: article
 needbtt: true
 ---

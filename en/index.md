@@ -2,6 +2,14 @@
 title: MNH48 Theme Test
 description: This is a test for how the theme is in English
 lang: en
+hasENG: true
+hasRMI: true
+hasJWI: true
+hasRJG: true
+hasBRG: true
+hasSCH: true
+hasTCH: true
+hasJPN: true
 layout: article
 needbtt: true
 ---
