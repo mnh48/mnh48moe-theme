@@ -64,10 +64,14 @@ needbtt: true
 - 另一件事
 
 
-這是一個按鈕
-{: style="text-align:center;"}
+{% capture ytembed %}{% include iframe.html iframeurl="https://www.youtube.com/embed/dQw4w9WgXcQ" iframewidth="600" iframeheight="320" %}{% endcapture -%}
+{% include togglebox.html boxid="樣本" boxtitle="單擊這裡來看爆雷標籤著的視頻的樣本" boxcontent=ytembed boxcaption="這是一個示例說明" -%}
 
-[單擊我](#)
+
+這是一個按鈕
+{: style="text-align:center;" id="按鈕"}
+
+[單擊我](#按鈕)
 {: .button .button300}
 
 

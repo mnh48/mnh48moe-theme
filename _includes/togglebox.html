@@ -1,0 +1,10 @@
+<div class="togglebox">
+  <input class="togglecontrol visualhide" id="{{ include.boxid | default: "togglecontent" }}" type="checkbox" />
+<label class="togglelabel"  for="{{ include.boxid | default: "togglecontent" }}">
+  {{ include.boxtitle | default: "Click to show content" }}
+</label>
+<figure style="text-align: center;" class="togglecontent">
+  {{ include.boxcontent | default: "This is some content" }}
+<figcaption style="display: block;">{{ include.boxcaption | default: "This is a caption of the content" }}</figcaption>
+</figure>
+</div>

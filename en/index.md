@@ -64,10 +64,14 @@ This is an unsorted list
 - Another thing
 
 
-This is a button
-{: style="text-align:center;"}
+{% capture ytembed %}{% include iframe.html iframeurl="https://www.youtube.com/embed/dQw4w9WgXcQ" iframewidth="600" iframeheight="320" %}{% endcapture -%}
+{% include togglebox.html boxid="example" boxtitle="Click for example video spoiler" boxcontent=ytembed boxcaption="This is example of a caption" -%}
 
-[Click me](#)
+
+This is a button
+{: style="text-align:center;" id="button"}
+
+[Click me](#button)
 {: .button .button300}
 
 

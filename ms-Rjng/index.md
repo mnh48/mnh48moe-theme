@@ -64,10 +64,14 @@ needbtt: true
 - ꤷꥍꥐꤴ ꤾꥊꥐ
 
 
-ꥆꥇꤵꥇ ꤼꥈꥆꤳꥈ ꤷꥈꤳꥏ
-{: style="text-align:center;"}
+{% capture ytembed %}{% include iframe.html iframeurl="https://www.youtube.com/embed/dQw4w9WgXcQ" iframewidth="600" iframeheight="320" %}{% endcapture -%}
+{% include togglebox.html boxid="ꤹꥋꥐꤳꥋꥒ" boxtitle="ꤰ꥓ꤾꥇꤰ꥓ ꥆꥈꥐꤳꥈꤰ꥓ ꤹꥋꥐꤳꥋꥒ ꤷꥋꤹꥋꤽꥐ ꤷꥇꤴꥉꥆꥋ" boxcontent=ytembed boxcaption="ꥆꥇꤵꥇ ꤹꥋꥐꤳꥋꥒ ꤷꥈꤳꥇꤽꥐ ꤰꥍꤹꥇꤾ꥓" -%}
 
-[ꤳꥍꤰꥐ ꤼꤿ](#)
+
+ꥆꥇꤵꥇ ꤼꥈꥆꤳꥈ ꤷꥈꤳꥏ
+{: style="text-align:center;" id="ꤷꥈꤳꥏ"}
+
+[ꤳꥍꤰꥐ ꤼꤿ](#ꤷꥈꤳꥏ)
 {: .button .button300}
 
 

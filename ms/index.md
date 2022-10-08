@@ -64,10 +64,14 @@ Ini senarai yang tidak bersusun
 - Benda lain
 
 
-Ini suatu butang
-{: style="text-align:center;"}
+{% capture ytembed %}{% include iframe.html iframeurl="https://www.youtube.com/embed/dQw4w9WgXcQ" iframewidth="600" iframeheight="320" %}{% endcapture -%}
+{% include togglebox.html boxid="contoh" boxtitle="Klik untuk contoh bocoran video" boxcontent=ytembed boxcaption="Ini contoh butiran kecil" -%}
 
-[Tekan saya](#)
+
+Ini suatu butang
+{: style="text-align:center;" id="butang"}
+
+[Tekan saya](#butang)
 {: .button .button300}
 
 

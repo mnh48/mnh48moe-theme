@@ -10,14 +10,14 @@
     {% if page.hasENG or page.hasRMI or page.hasJWI or page.hasRJG or page.hasSCH or page.hasTCH or page.hasJPN -%}
     <div class="langselect">
       <ul id="langselect-list">
-        {% if page.hasENG %}<li><a href="{{ fronturl }}/en/{{ backurl }}" lang="en">English</a></li>{% endif -%}
-        {% if page.hasRMI %}<li><a href="{{ fronturl }}/ms/{{ backurl }}" lang="ms">Bahasa Melayu Rumi</a></li>{% endif -%}
-        {% if page.hasJWI %}<li><a href="{{ fronturl }}/ms-Arab/{{ backurl }}" lang="ms-Arab">بهاس ملايو جاوي</a></li>{% endif -%}
-        {% if page.hasRJG %}<li><a href="{{ fronturl }}/ms-Rjng/{{ backurl }}" lang="ms-Rjng">ꤷꥁꤼ ꤸꥍꤾꤿꥈ ꤽꥍꤺꥏ</a></li>{% endif -%}
-        {% if page.hasBRG %}<li><a href="{{ fronturl }}/ms-Brgn/{{ backurl }}" lang="ms-Brgn" style="writing-mode: unset;">  </a></li>{% endif -%}
-        {% if page.hasSCH %}<li><a href="{{ fronturl }}/zh-Hans/{{ backurl }}" lang="zh-Hans">简体华文</a></li>{% endif -%}
-        {% if page.hasTCH %}<li><a href="{{ fronturl }}/zh-Hant/{{ backurl }}" lang="zh-Hant">繁體華文</a></li>{% endif -%}
-        {% if page.hasJPN %}<li><a href="{{ fronturl }}/ja/{{ backurl }}" lang="ja">日本語</a></li>{% endif -%}
+        {% if page.hasENG %}<li><a href="/en/{{ backurl }}" lang="en">English</a></li>{% endif -%}
+        {% if page.hasRMI %}<li><a href="/ms/{{ backurl }}" lang="ms">Bahasa Melayu Rumi</a></li>{% endif -%}
+        {% if page.hasJWI %}<li><a href="/ms-Arab/{{ backurl }}" lang="ms-Arab">بهاس ملايو جاوي</a></li>{% endif -%}
+        {% if page.hasRJG %}<li><a href="/ms-Rjng/{{ backurl }}" lang="ms-Rjng">ꤷꥁꤼ ꤸꥍꤾꤿꥈ ꤽꥍꤺꥏ</a></li>{% endif -%}
+        {% if page.hasBRG %}<li><a href="/ms-Brgn/{{ backurl }}" lang="ms-Brgn" style="writing-mode: unset;">  </a></li>{% endif -%}
+        {% if page.hasSCH %}<li><a href="/zh-Hans/{{ backurl }}" lang="zh-Hans">简体华文</a></li>{% endif -%}
+        {% if page.hasTCH %}<li><a href="/zh-Hant/{{ backurl }}" lang="zh-Hant">繁體華文</a></li>{% endif -%}
+        {% if page.hasJPN %}<li><a href="/ja/{{ backurl }}" lang="ja">日本語</a></li>{% endif -%}
       </ul>
       <a href="#langselect-list" aria-controls="langselect-list" role="button" data-toggle="langselect" id="langselect-button">
       {{ hrdt.pagelanguage }}

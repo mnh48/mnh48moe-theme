@@ -64,10 +64,14 @@ needbtt: true
 - もうひとつ
 
 
-これはボタンです。
-{: style="text-align:center;"}
+{% capture ytembed %}{% include iframe.html iframeurl="https://www.youtube.com/embed/dQw4w9WgXcQ" iframewidth="600" iframeheight="320" %}{% endcapture -%}
+{% include togglebox.html boxid="例" boxtitle="ビデオスポイラーの例はクリックしてください" boxcontent=ytembed boxcaption="これはキャプションの例です" -%}
 
-[クリックしてください](#)
+
+これはボタンです。
+{: style="text-align:center;" id="ボタン"}
+
+[クリックしてください](#ボタン)
 {: .button .button300}
 
 

@@ -64,10 +64,14 @@ needbtt: true
 - بندا لاٴين
 
 
-اين سواتو بوتڠ
-{: style="text-align:center;"}
+{% capture ytembed %}{% include iframe.html iframeurl="https://www.youtube.com/embed/dQw4w9WgXcQ" iframewidth="600" iframeheight="320" %}{% endcapture -%}
+{% include togglebox.html boxid="چونتوه" boxtitle="کليک اونتوق چونتوه بوچورن ۏيديو" boxcontent=ytembed boxcaption="اين چونتوه بوتيرن کچيل" -%}
 
-[تکن ساي](#)
+
+اين سواتو بوتڠ
+{: style="text-align:center;" id="بوتڠ"}
+
+[تکن ساي](#بوتڠ)
 {: .button .button300}
 
 
