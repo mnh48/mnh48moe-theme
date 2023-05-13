@@ -1,0 +1,17 @@
+<section class="imagegallery" id="{{ include.galleryname | default: "notitle" }}">
+  {% if include.gallerytitle -%}
+  <h4>{{ include.gallerytitle }}</h4>
+  {% endif -%}
+  {% assign imagecounter = include.gallerycount -%}
+  {% for imagenumber in (1..imagecounter) %}
+  <div class="imageitem">
+    {% assign currentnumber = forloop.index | minus:1 %}
+    <a href="#{{ include.galleryname | default: "notitle" }}-image-{{ forloop.index }}">
+      <img src="{{ include.gallerythumb[currentnumber] }}" loading="lazy" />
+    </a>
+    {% if include.gallerycaption[currentnumber] -%}
+    <strong>{{ include.gallerycaption[currentnumber] }}</strong>
+    {% endif -%}
+  </div>
+  {% endfor %}
+</section>

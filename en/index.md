@@ -75,5 +75,41 @@ This is a button
 {: .button .button300}
 
 
+{% capture gallerythumb_array %}
+https://file.mnh48.moe/transit/2022/11/ge15/b_2_kl-sentral-waypoint-signboard-small.jpg
+https://file.mnh48.moe/transit/2022/11/ge15/f_2_free-flowing-drink-small.jpg
+https://file.mnh48.moe/transit/2022/11/ge15/g_5_sandwich-and-tea-small.jpg
+https://file.mnh48.moe/transit/2022/11/ge15/i_2_bistro-onboard-train-small.jpg
+{% endcapture -%}
+{% assign gallerythumb = gallerythumb_array | strip | newline_to_br | strip_newlines | split: "<br />" -%}
+
+{% capture galleryimage_array %}
+https://file.mnh48.moe/transit/2022/11/ge15/b_2_kl-sentral-waypoint-signboard.jpg
+https://file.mnh48.moe/transit/2022/11/ge15/f_2_free-flowing-drink.jpg
+https://file.mnh48.moe/transit/2022/11/ge15/g_5_sandwich-and-tea.jpg
+https://file.mnh48.moe/transit/2022/11/ge15/i_2_bistro-onboard-train.jpg
+{% endcapture -%}
+{% assign galleryimage = galleryimage_array | strip | newline_to_br | strip_newlines | split: "<br />" -%}
+
+{% capture gallerycaption_array %}
+Some sample image
+Another sample image
+Grab some food
+Bistro on train
+{% endcapture -%}
+{% assign gallerycaption = gallerycaption_array | strip | newline_to_br | strip_newlines | split: "<br />" -%}
+
+{% capture imagecaption_array %}
+Signboard at KL Sentral station
+Free-flowing drink for business class ticket holder
+Sandwich and plain tea
+Bistro on train selling food
+{% endcapture -%}
+{% assign imagecaption = imagecaption_array | strip | newline_to_br | strip_newlines | split: "<br />" -%}
+
+{% include imagegallery.html gallerytitle="Sample Lightbox Gallery" gallerycount="4" galleryname="sample" gallerythumb=gallerythumb gallerycaption=gallerycaption -%}
+{% include imagelightbox.html gallerycount="4" galleryname="sample" galleryimage=galleryimage imagecaption=imagecaption -%}
+
+
 &nbsp;
 

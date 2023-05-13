@@ -1,0 +1,14 @@
+<div class="imagelightboxes">
+  {% for imagenumber in (1..imagecounter) %}
+  <div class="imagelightbox" id="{{ include.galleryname | default: "notitle" }}-image-{{ forloop.index }}">
+    {% assign currentnumber = forloop.index | minus:1 %}
+    <a href="#{{ include.galleryname | default: "notitle" }}" class="close">&times;</a>
+    <div class="content">
+      <img src="{{ include.galleryimage[currentnumber] }}" loading="lazy" />
+      {% if include.imagecaption[currentnumber] -%}
+      <p>{{ include.imagecaption[currentnumber] }}</p>
+      {% endif -%}
+    </div>
+  </div>
+  {% endfor %}
+</div>

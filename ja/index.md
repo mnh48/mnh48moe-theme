@@ -75,5 +75,41 @@ needbtt: true
 {: .button .button300}
 
 
+{% capture gallerythumb_array %}
+https://file.mnh48.moe/transit/2022/11/ge15/b_2_kl-sentral-waypoint-signboard-small.jpg
+https://file.mnh48.moe/transit/2022/11/ge15/f_2_free-flowing-drink-small.jpg
+https://file.mnh48.moe/transit/2022/11/ge15/g_5_sandwich-and-tea-small.jpg
+https://file.mnh48.moe/transit/2022/11/ge15/i_2_bistro-onboard-train-small.jpg
+{% endcapture -%}
+{% assign gallerythumb = gallerythumb_array | strip | newline_to_br | strip_newlines | split: "<br />" -%}
+
+{% capture galleryimage_array %}
+https://file.mnh48.moe/transit/2022/11/ge15/b_2_kl-sentral-waypoint-signboard.jpg
+https://file.mnh48.moe/transit/2022/11/ge15/f_2_free-flowing-drink.jpg
+https://file.mnh48.moe/transit/2022/11/ge15/g_5_sandwich-and-tea.jpg
+https://file.mnh48.moe/transit/2022/11/ge15/i_2_bistro-onboard-train.jpg
+{% endcapture -%}
+{% assign galleryimage = galleryimage_array | strip | newline_to_br | strip_newlines | split: "<br />" -%}
+
+{% capture gallerycaption_array %}
+サンプル画像
+別のサンプル画像
+食べ物だぞ
+電車でカフェ
+{% endcapture -%}
+{% assign gallerycaption = gallerycaption_array | strip | newline_to_br | strip_newlines | split: "<br />" -%}
+
+{% capture imagecaption_array %}
+ＫＬセントラルの看板
+ビジネスクラスチケットをお持ちの方限定の飲み放題
+サンドイッチとプレーンティー
+電車でも食べ物が売る
+{% endcapture -%}
+{% assign imagecaption = imagecaption_array | strip | newline_to_br | strip_newlines | split: "<br />" -%}
+
+{% include imagegallery.html gallerytitle="ライトボックスギャラリーのサンプル" gallerycount="4" galleryname="sample" gallerythumb=gallerythumb gallerycaption=gallerycaption -%}
+{% include imagelightbox.html gallerycount="4" galleryname="sample" galleryimage=galleryimage imagecaption=imagecaption -%}
+
+
 &nbsp;
 
