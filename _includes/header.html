@@ -20,10 +20,10 @@
         {% if page.hasJPN %}<li><a href="/ja/{{ backurl }}" lang="ja">日本語</a></li>{% endif -%}
       </ul>
       <a href="#langselect-list" aria-controls="langselect-list" role="button" data-toggle="langselect" id="langselect-button">
-      {{ hrdt.pagelanguage }}
+      <img id="translatelogo1" src="https://file.mnh48.moe/img/root/translate-logo.svg?v=1" alt="translate" /> {{ hrdt.changelang }}
       </a>
       <a href="#langselect-button" aria-controls="langselect-list" role="button" data-toggle="langselect" class="langselect-close">
-      {{ hrdt.pagelanguage }}
+      <img id="translatelogo2" src="https://file.mnh48.moe/img/root/translate-logo.svg?v=1" alt="translate" /> {{ hrdt.changelang }}
       </a>
     </div>
     {% endif -%}

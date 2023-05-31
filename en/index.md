@@ -18,6 +18,7 @@ needbtt: true
 - [Paragraph Title](#paragraph-title)
   - [Smaller title](#smaller-title)
     - [Another smaller title](#another-smaller-title)
+    - [Sample Lightbox Gallery](#sample-lightbox-gallery)
 {: .toc id="toc" data-title="The Content"}
 
 

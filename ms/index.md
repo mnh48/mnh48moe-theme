@@ -18,6 +18,7 @@ needbtt: true
 - [Tajuk Perenggan](#tajuk-perenggan)
   - [Tajuk kecil](#tajuk-kecil)
     - [Tajuk kecil yang lain](#tajuk-kecil-yang-lain)
+    - [Contoh galeri jenis kotak cahaya](#contoh-galeri-jenis-kotak-cahaya)
 {: .toc id="toc" data-title="Kandungan"}
 
 

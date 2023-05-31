@@ -1,6 +1,6 @@
 <section class="imagegallery" id="{{ include.galleryname | default: "notitle" }}">
   {% if include.gallerytitle -%}
-  <h4>{{ include.gallerytitle }}</h4>
+  <h4 id="{{ include.gallerytitle | slugify: "raw" }}">{{ include.gallerytitle }}</h4>
   {% endif -%}
   {% assign imagecounter = include.gallerycount -%}
   {% for imagenumber in (1..imagecounter) %}
