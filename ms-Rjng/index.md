@@ -65,8 +65,17 @@ needbtt: true
 - ꤷꥍꥐꤴ ꤾꥊꥐ
 
 
+ꥆꥇꤵꥇ ꤰꥋꤳꤰ꥓ ꤷꥋꤾꥉꥒ ꤾꥇꤶꤳ꥓ ꤿꥏ ꤸꥍꤲꥐꤴꥈꤲꥇ ꤳꥈꤾꥇꤼꥐ
+{% capture markdowntextinbox %}
+#### ꤳꤺꥈꤰ꥓ ꤰꥍꤹꥇꤾ꥓ ꤿꥏ ꤾꥊꥐ ꤴꤾꤸ꥓ ꤰꥋꤳꤰ꥓ ꤷꥋꤾꥉꥒ ꤾꥇꤶꤳ꥓
+ꥆꥇꤵꥇ *ꤹꥋꥐꤳꥋꥒ* **ꤼꥈꥆꤳꥈ** ꤳꥈꤾꥇꤼꥐ.
+{% endcapture -%}
+{% include toggletext.html boxid="ꤹꥋꥐꤳꥋꥒꤳꥈꤾꥇꤼꥐ" boxtitle="ꤰ꥓ꤾꥇꤰ꥓ ꥆꥈꥐꤳꥈꤰ꥓ ꤷꥈꤰ ꤷꤹ ꤳꥈꤾꥇꤼꥐ" boxcontent=markdowntextinbox -%}
+
+
+ꥆꥇꤵꥇ ꤰꥋꤳꤰ꥓ ꤷꥋꤾꥉꥒ ꤾꥇꤶꤳ꥓ ꤿꥏ ꤸꥍꤲꥐꤴꥈꤲꥇ ꤽꤺꥒ, ꤴꥇ ꤸꤵ ꤽꤺꥒ ꥆꥇꤳꥈ ꤸꥍꤸ꥓ꤷꥍꤵꤸ꥓ꤰꥐ ꤷꥇꤴꥉꥆꥋ YouTube
 {% capture ytembed %}{% include iframe.html iframeurl="https://www.youtube.com/embed/dQw4w9WgXcQ" iframewidth="600" iframeheight="320" %}{% endcapture -%}
-{% include togglebox.html boxid="ꤹꥋꥐꤳꥋꥒ" boxtitle="ꤰ꥓ꤾꥇꤰ꥓ ꥆꥈꥐꤳꥈꤰ꥓ ꤹꥋꥐꤳꥋꥒ ꤷꥋꤹꥋꤽꥐ ꤷꥇꤴꥉꥆꥋ" boxcontent=ytembed boxcaption="ꥆꥇꤵꥇ ꤹꥋꥐꤳꥋꥒ ꤷꥈꤳꥇꤽꥐ ꤰꥍꤹꥇꤾ꥓" -%}
+{% include togglefigure.html boxid="ꤹꥋꥐꤳꥋꥒꤽꤺꥒ" boxtitle="ꤰ꥓ꤾꥇꤰ꥓ ꥆꥈꥐꤳꥈꤰ꥓ ꤹꥋꥐꤳꥋꥒ ꤷꥋꤹꥋꤽꥐ ꤷꥇꤴꥉꥆꥋ" boxcontent=ytembed boxcaption="ꥆꥇꤵꥇ ꤹꥋꥐꤳꥋꥒ ꤷꥈꤳꥇꤽꥐ ꤰꥍꤹꥇꤾ꥓" -%}
 
 
 ꥆꥇꤵꥇ ꤼꥈꥆꤳꥈ ꤷꥈꤳꥏ

@@ -65,8 +65,17 @@ needbtt: true
 - 另一件事
 
 
+這是一個可收起的文本
+{% capture markdowntextinbox %}
+#### 可收起的文本之中的另一個較小的標題
+這是*某個*文本**的**樣本。
+{% endcapture -%}
+{% include toggletext.html boxid="文本樣本" boxtitle="單擊這裡來看所寫的文本" boxcontent=markdowntextinbox -%}
+
+
+這是一個可收起的圖盒，圖盒中有YouTube的內嵌視頻
 {% capture ytembed %}{% include iframe.html iframeurl="https://www.youtube.com/embed/dQw4w9WgXcQ" iframewidth="600" iframeheight="320" %}{% endcapture -%}
-{% include togglebox.html boxid="樣本" boxtitle="單擊這裡來看爆雷標籤著的視頻的樣本" boxcontent=ytembed boxcaption="這是一個示例說明" -%}
+{% include togglefigure.html boxid="圖盒樣本" boxtitle="單擊這裡來看爆雷標籤著的視頻的樣本" boxcontent=ytembed boxcaption="這是一個示例說明" -%}
 
 
 這是一個按鈕

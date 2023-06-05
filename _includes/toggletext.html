@@ -1,0 +1,9 @@
+<div class="togglebox">
+  <input class="togglecontrol visualhide" id="{{ include.boxid | default: "toggletextcontent" }}" type="checkbox" />
+<label class="togglelabel"  for="{{ include.boxid | default: "toggletextcontent" }}">
+  {{ include.boxtitle | default: "Click to show content" }}
+</label>
+  <div class="togglecontent" markdown="block">
+  {{ include.boxcontent | default: "This *is* **some** content" }}
+  </div>
+</div>

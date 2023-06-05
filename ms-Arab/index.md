@@ -65,8 +65,17 @@ needbtt: true
 - بندا لاٴين
 
 
+اين کوتق بوليه ليڤت يڠ مڠاندوڠي توليسن
+{% capture markdowntextinbox %}
+#### تاجوق کچيل يڠ لاٴين دالم کوتق بوليه ليڤت
+اين *چونتوه* **سواتو** توليسن.
+{% endcapture -%}
+{% include toggletext.html boxid="چونتوه-توليسن" boxtitle="کليک اونتوق بوک باچ توليسن" boxcontent=markdowntextinbox -%}
+
+
+اين کوتق بوليه ليڤت يڠ مڠاندوڠي راجه⹁ دمان راجه ايت ممبنمکن ۏيديو YouTube
 {% capture ytembed %}{% include iframe.html iframeurl="https://www.youtube.com/embed/dQw4w9WgXcQ" iframewidth="600" iframeheight="320" %}{% endcapture -%}
-{% include togglebox.html boxid="چونتوه" boxtitle="کليک اونتوق چونتوه بوچورن ۏيديو" boxcontent=ytembed boxcaption="اين چونتوه بوتيرن کچيل" -%}
+{% include togglefigure.html boxid="چونتوه-راجه" boxtitle="کليک اونتوق چونتوه بوچورن ۏيديو" boxcontent=ytembed boxcaption="اين چونتوه بوتيرن کچيل" -%}
 
 
 اين سواتو بوتڠ

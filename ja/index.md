@@ -65,8 +65,17 @@ needbtt: true
 - もうひとつ
 
 
+これは折りたたみ可能テキストです。
+{% capture markdowntextinbox %}
+#### 折りたたみ可能テキストでの小さなサブトピック
+これ*は*サンプルの**テキスト**です。
+{% endcapture -%}
+{% include toggletext.html boxid="テキストの例" boxtitle="テキストの例はクリックしてください" boxcontent=markdowntextinbox -%}
+
+
+これは折りたたみ可能フィギュアです。フィギュアはユーチューブ動画の埋め込みです。
 {% capture ytembed %}{% include iframe.html iframeurl="https://www.youtube.com/embed/dQw4w9WgXcQ" iframewidth="600" iframeheight="320" %}{% endcapture -%}
-{% include togglebox.html boxid="例" boxtitle="ビデオスポイラーの例はクリックしてください" boxcontent=ytembed boxcaption="これはキャプションの例です" -%}
+{% include togglefigure.html boxid="フィギュアの例" boxtitle="ビデオスポイラーの例はクリックしてください" boxcontent=ytembed boxcaption="これはキャプションの例です" -%}
 
 
 これはボタンです。

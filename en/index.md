@@ -65,8 +65,17 @@ This is an unsorted list
 - Another thing
 
 
+This is a collapsible box containing text
+{% capture markdowntextinbox %}
+#### Another smaller header inside collapsible box
+This *is* **sample** text.
+{% endcapture -%}
+{% include toggletext.html boxid="textexample" boxtitle="Click to open text" boxcontent=markdowntextinbox -%}
+
+
+This is a collapsible box containing figure (in this case, the figure hold YouTube embed iframe)
 {% capture ytembed %}{% include iframe.html iframeurl="https://www.youtube.com/embed/dQw4w9WgXcQ" iframewidth="600" iframeheight="320" %}{% endcapture -%}
-{% include togglebox.html boxid="example" boxtitle="Click for example video spoiler" boxcontent=ytembed boxcaption="This is example of a caption" -%}
+{% include togglefigure.html boxid="figexample" boxtitle="Click for example video spoiler" boxcontent=ytembed boxcaption="This is example of a caption" -%}
 
 
 This is a button

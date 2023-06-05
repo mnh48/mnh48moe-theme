@@ -65,8 +65,17 @@ Ini senarai yang tidak bersusun
 - Benda lain
 
 
+Ini kotak boleh lipat yang mengandungi tulisan
+{% capture markdowntextinbox %}
+#### Tajuk kecil yang lain dalam kotak boleh lipat
+Ini *contoh* **suatu** tulisan.
+{% endcapture -%}
+{% include toggletext.html boxid="contohtulisan" boxtitle="Klik untuk buka baca tulisan" boxcontent=markdowntextinbox -%}
+
+
+Ini kotak boleh lipat yang mengandungi rajah, di mana rajah itu membenamkan video YouTube
 {% capture ytembed %}{% include iframe.html iframeurl="https://www.youtube.com/embed/dQw4w9WgXcQ" iframewidth="600" iframeheight="320" %}{% endcapture -%}
-{% include togglebox.html boxid="contoh" boxtitle="Klik untuk contoh bocoran video" boxcontent=ytembed boxcaption="Ini contoh butiran kecil" -%}
+{% include togglefigure.html boxid="contohrajah" boxtitle="Klik untuk contoh bocoran video" boxcontent=ytembed boxcaption="Ini contoh butiran kecil" -%}
 
 
 Ini suatu butang
