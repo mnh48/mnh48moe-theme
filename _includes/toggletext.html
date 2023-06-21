@@ -3,7 +3,7 @@
 <label class="togglelabel"  for="{{ include.boxid | default: "toggletextcontent" }}">
   {{ include.boxtitle | default: "Click to show content" }}
 </label>
-  <div class="togglecontent" markdown="block">
-  {{ include.boxcontent | default: "This *is* **some** content" }}
+  <div class="togglecontent">
+  {{ include.boxcontent | default: "This *is* **some** content" | markdownify }}
   </div>
 </div>
