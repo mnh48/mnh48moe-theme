@@ -4,7 +4,7 @@
 {% capture backurl %}{{ page.url | remove_first: "/en/" | remove_first: "/ms/" | remove_first: "/ms-Arab/" | remove_first: "/ms-Rjng/" | remove_first: "/ms-Brgn/" | remove_first: "/zh-Hans/" | remove_first: "/zh-Hant/" | remove_first: "/ja/"}}{% endcapture -%}
 {% assign hrdt = site.data.html.header[pagelang] -%}
 <header class="page-header">
-    <img id="toplogo" src="https://img.mnh48.moe/mnh48/mnh48-nobg-250.png" alt="MNH48" class="webmainicon"/>
+    <img id="toplogo" src="https://file.mnh48.com/img/mnh48/mnh48-nobg-250.png" alt="MNH48" class="webmainicon"/>
     <h1 class="websitetitle" lang="{{ pagelang }}">{{ hrdt.webtitle }}</h1>
     <h2 class="webpagetitle" lang="{{ pagelang }}">{% if page.title %}{% if page.title == hrdt.webtitle %}{{ hrdt.pagetitle }}{% else %}{{ page.title }}{% endif %}{% else %}{{ hrdt.pagetitle }}{% endif %}</h2>
     {% if page.hasENG or page.hasRMI or page.hasJWI or page.hasRJG or page.hasSCH or page.hasTCH or page.hasJPN -%}
@@ -20,10 +20,10 @@
         {% if page.hasJPN %}<li><a href="/ja/{{ backurl }}" lang="ja">日本語</a></li>{% endif -%}
       </ul>
       <a href="#langselect-list" aria-controls="langselect-list" role="button" data-toggle="langselect" id="langselect-button">
-      <img id="translatelogo1" src="https://file.mnh48.moe/img/root/translate-logo.svg?v=1" alt="translate" /> {{ hrdt.changelang }}
+      <img id="translatelogo1" src="https://file.mnh48.com/img/root/translate-logo.svg?v=1" alt="translate" /> {{ hrdt.changelang }}
       </a>
       <a href="#langselect-button" aria-controls="langselect-list" role="button" data-toggle="langselect" class="langselect-close">
-      <img id="translatelogo2" src="https://file.mnh48.moe/img/root/translate-logo.svg?v=1" alt="translate" /> {{ hrdt.changelang }}
+      <img id="translatelogo2" src="https://file.mnh48.com/img/root/translate-logo.svg?v=1" alt="translate" /> {{ hrdt.changelang }}
       </a>
     </div>
     {% endif -%}

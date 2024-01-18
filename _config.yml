@@ -5,7 +5,7 @@ twitter_username: yayamnh48 #your twitter username
 github_username: mnh48 #your github username
 youtube_link: https://www.youtube.com/channel/UCnbL8SM08ViV43pZP5UuEhw/ #your youtube channel link
 timezone: Asia/Kuala_Lumpur #the website's timezone
-site_domain: theme.mnh48.moe #the domain of the website
+site_domain: theme.mnh48.com #the domain of the website
 branch: main #change this to the branch of your website repository where the website is generated from
 repository: mnh48/mnh48moe-theme #change this to the repository of your website, or comment out if not using GitHub Page
 #remote_theme: mnh48/mnh48moe-theme #uncomment this if you use this file as base for your config
@@ -21,7 +21,7 @@ blog:
   url: mnh48.com
 
 mnh48:
-    picture: https://img.mnh48.moe/mnh48/mnh48-200.png
+    picture: https://file.mnh48.com/img/mnh48/mnh48-200.png
     twitter: yayamnh48
 
 plugins:

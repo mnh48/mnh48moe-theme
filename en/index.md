@@ -86,18 +86,18 @@ This is a button
 
 
 {% capture gallerythumb_array %}
-https://file.mnh48.moe/transit/2022/11/ge15/b_2_kl-sentral-waypoint-signboard-small.jpg
-https://file.mnh48.moe/transit/2022/11/ge15/f_2_free-flowing-drink-small.jpg
-https://file.mnh48.moe/transit/2022/11/ge15/g_5_sandwich-and-tea-small.jpg
-https://file.mnh48.moe/transit/2022/11/ge15/i_2_bistro-onboard-train-small.jpg
+https://file.mnh48.com/transit/2022/11/ge15/b_2_kl-sentral-waypoint-signboard-small.jpg
+https://file.mnh48.com/transit/2022/11/ge15/f_2_free-flowing-drink-small.jpg
+https://file.mnh48.com/transit/2022/11/ge15/g_5_sandwich-and-tea-small.jpg
+https://file.mnh48.com/transit/2022/11/ge15/i_2_bistro-onboard-train-small.jpg
 {% endcapture -%}
 {% assign gallerythumb = gallerythumb_array | strip | newline_to_br | strip_newlines | split: "<br />" -%}
 
 {% capture galleryimage_array %}
-https://file.mnh48.moe/transit/2022/11/ge15/b_2_kl-sentral-waypoint-signboard.jpg
-https://file.mnh48.moe/transit/2022/11/ge15/f_2_free-flowing-drink.jpg
-https://file.mnh48.moe/transit/2022/11/ge15/g_5_sandwich-and-tea.jpg
-https://file.mnh48.moe/transit/2022/11/ge15/i_2_bistro-onboard-train.jpg
+https://file.mnh48.com/transit/2022/11/ge15/b_2_kl-sentral-waypoint-signboard.jpg
+https://file.mnh48.com/transit/2022/11/ge15/f_2_free-flowing-drink.jpg
+https://file.mnh48.com/transit/2022/11/ge15/g_5_sandwich-and-tea.jpg
+https://file.mnh48.com/transit/2022/11/ge15/i_2_bistro-onboard-train.jpg
 {% endcapture -%}
 {% assign galleryimage = galleryimage_array | strip | newline_to_br | strip_newlines | split: "<br />" -%}
 
