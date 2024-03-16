@@ -29,5 +29,5 @@ temporarily, people who used the CSS before the move can continue to use it
 while I sort it for new version release.
 
 The example website that is generated from this theme, which lives at
-https://theme.mnh48.com, and its source markdown files in this repository,
+https://theme.mnh48.moe, and its source markdown files in this repository,
 are also all licensed under The MIT license.
